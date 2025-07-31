@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: "William Geckle | Mechanical Engineer"
+---
+<h1>Hi, I'm William 👋</h1>
+<p>Mechanical Engineer.</p>
+
+<h2>Featured Projects</h2>
+<ul>
+  {% for project in collections.projects | reverse %}
+    <li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
+  {% endfor %}
+</ul>
