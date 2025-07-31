@@ -1,0 +1,9 @@
+/* Minimal engineering-friendly styles */
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  img { max-width: 100%; }
