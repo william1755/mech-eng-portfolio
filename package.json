@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve",
+    "scripts": {
     "build": "eleventy",
-    "deploy": "npm run build && touch docs/.nojekyll && git add docs/ && git commit -m 'Build site for deployment' && git push"
+    "predeploy": "rm -rf docs && npm run build && touch docs/.nojekyll",
+    "deploy": "npm run predeploy && git add docs/ && git commit -m 'Deploy to GitHub Pages' && git push",
+    "start": "eleventy --serve"
+    }
   },
   "keywords": [],
   "author": "",
