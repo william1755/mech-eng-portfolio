@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Other head elements -->
-  <link rel="stylesheet" href="/docs/css/style.css">
-  <link rel="stylesheet" href="/docs/css/print.css" media="print">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<div class="print-only print-footer">
-  Portfolio of William Geckle | Generated: <span id="print-date"></span>
-  <script>
-    document.getElementById('print-date').textContent = new Date().toLocaleDateString();
-  </script>
-</div>
 <body>
-  <p><img src="/images/demo.png" alt="Demo"></p>
+    <header id="header">
+    <div class="container nav-container">
+        <div class="logo">MECH<span>.</span></div>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+    
+    <main>
+        <p><img src="/images/demo.png" alt="Demo"></p>
 <p><strong>Problem</strong>: demo<br>
 <strong>Solution</strong>:  demo</p>
 <ul>
@@ -21,6 +30,47 @@
 <li><strong>Result</strong>: demo</li>
 </ul>
 
-  <script src="/src/scripts/main.js"></script>
+    </main>
+    
+    <footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">MECH<span>.</span></div>
+                <p>
+                    Precision engineering and elegant design solutions for complex mechanical challenges.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Patents</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Mechanical Engineering Portfolio. All rights reserved.
+        </div>
+    </div>
+</footer>
+    
+    <script src="scripts/main.js"></script>
 </body>
 </html>

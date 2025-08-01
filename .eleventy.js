@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-  // Copy these directories to output
+  // Copy static assets to output
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/images");
@@ -7,11 +7,8 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "docs",
+      output: "docs",  // Important for GitHub Pages
       includes: "_includes"
-    },
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk"
+    }
   };
 };
