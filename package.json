@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve",  
+    "start": "eleventy --serve",
     "build": "eleventy",
-    "deploy": "gh-pages -d _site"
+    "deploy": "npm run build && touch docs/.nojekyll && git add docs/ && git commit -m 'Build site for deployment' && git push"
   },
   "keywords": [],
   "author": "",
