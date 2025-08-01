@@ -3,15 +3,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/images");
-
+  
   return {
     dir: {
       input: "src",
-      output: "docs",  // Changed from _site to docs
+      output: "docs",
       includes: "_includes"
     },
-    pathPrefix: "/",  // Remove if deploying to user/organization pages (username.github.io)
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk"
   };
 };
