@@ -4,12 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scripts": {
     "build": "eleventy",
     "predeploy": "rm -rf docs && npm run build && touch docs/.nojekyll",
     "deploy": "npm run predeploy && git add docs/ && git commit -m 'Deploy to GitHub Pages' && git push",
     "start": "eleventy --serve"
-    }
   },
   "keywords": [],
   "author": "",
